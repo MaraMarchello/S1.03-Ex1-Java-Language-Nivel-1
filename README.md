@@ -1,55 +1,61 @@
-# Ejercicio de manejo de excepciones en Java
+# Proyecto de Clase Month (Mes)
 
-## 📄 Descripción
-Este ejercicio demuestra el manejo de excepciones en Java a través de un sencillo sistema de gestión de ventas. El programa implementa un sistema básico de ventas donde se pueden añadir productos a una venta, y calcular el precio total mientras se manejan varias excepciones.
+## Descripción
+Este proyecto demuestra la implementación de una clase `Month` en Java, mostrando el uso de diferentes colecciones de Java (`ArrayList` y `HashSet`) y conceptos de programación orientada a objetos.
 
-El ejercicio incluye:
-- Manejo de excepciones personalizadas (SaleBuidedException)
-- Manejo de excepciones incorporadas (IndexOutOfBoundsException)
-- Funcionalidad básica de gestión de ventas y productos
+## Características
+- Clase personalizada `Month` con implementación adecuada de:
+  - `equals()`
+  - `hashCode()`
+  - `toString()`
+- Demostración de:
+  - Operaciones con ArrayList
+  - Uso de HashSet
+  - Implementación de Iterator
+  - Manipulación de colecciones
 
-## Tecnologías utilizadas
-- Java SE
-- Programación orientada a objetos
-- Manejo de excepciones
-- Colecciones arrayList y listas
+## Estructura del Código
+Los componentes principales incluyen:
+- `Month.java`: Contiene la implementación de la clase Month con un método main que demuestra varias operaciones
 
-## 📋 Requisitos
-- Java Development Kit (JDK) 8 o superior
-- Java IDE (Eclipse, IntelliJ IDEA, o similar)
+## Ejemplo de Uso
+El programa demuestra:
+1. Creación y población de un ArrayList con meses
+2. Inserción de elementos en posiciones específicas
+3. Conversión de ArrayList a HashSet
+4. Prueba de manejo de duplicados en HashSet
+5. Diferentes formas de iterar a través de colecciones:
+   - Bucle for-each
+   - Iterator
 
-## 🛠️ Instalación
-1. Clona el repositorio o descarga los archivos fuente
-2. Asegúrese de que todos los archivos están en la estructura de paquetes correcta:
-   ```
-   tascaS102Ex1/
-   ├── Main.java
-   ├── Sale.java
-   ├── Producto.java
-   └── SaleBuidedException.java
-   ```
-3. Importe el proyecto en su IDE preferido
+## Ejemplo de Salida 
 
-## ▶️ Implementación
-1. Abra el proyecto en su IDE
-2. Ejecute el archivo `Main.java`.
-3. El programa demostrará:
-   - Añadir productos a una venta
-   - Cálculo del precio total
-   - Manejo de la excepción de venta vacía
-   - Manejo de excepción de índice fuera de límites
+Contenido del ArrayList:
+Enero
+Febrero
+Marzo
+Abril
+Mayo
+Junio
+Julio
+Agosto
+Septiembre
+Octubre
+Noviembre
+Diciembre
+Contenido del HashSet usando bucle for-each:
+[Todos los meses se mostrarán sin un orden particular]
+Contenido del HashSet usando iterator:
+[Todos los meses se mostrarán sin un orden particular]
 
-## Despliegue
-Este es un ejercicio de aprendizaje y no está diseñado para el despliegue de producción. Se ejecuta localmente como una aplicación Java.
+## Detalles Técnicos
+- Lenguaje: Java
+- Paquete: tascaS103Ex1
+- Colecciones utilizadas: 
+  - `ArrayList`
+  - `HashSet`
+  - `Iterator`
 
-## 🤝 Contribución
-Este es un ejercicio educativo. Si quieres contribuir:
-1. Fork el repositorio
-2. Crea una nueva rama para tus características
-3. Envía un pull request con una descripción clara de tus cambios
-
-## 📁 Estructura del Proyecto
-- `Main.java`: Contiene la ejecución del programa principal
-- `Sale.java`: Implementa la funcionalidad de venta
-- `Product.java`: Define la clase de producto
-- `SaleBuidedException.java`: Excepción personalizada para la validación de la venta
+## Notas
+- El HashSet demuestra cómo se manejan automáticamente los duplicados (intentando agregar Enero dos veces)
+- El proyecto muestra la implementación correcta de los métodos `equals()` y `hashCode()` para el funcionamiento correcto del HashSet
